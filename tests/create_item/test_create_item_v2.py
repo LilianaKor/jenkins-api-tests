@@ -34,3 +34,12 @@ def test_headers_content_length_0():
     #response = CreateItem.post_create_item()
     assert response.headers.keys().__contains__("Content-Length")
     assert response.headers["Content-Length"] == "0"
+
+
+
+def test_headers_content_type_if_present():
+    if "Content-Length" in response.headers and response.headers["Content-Length"] != "0":
+        assert "Content-Type" in response.headers
+        assert response.headers["Content-Type"].startswith("text/html")
+    else:
+        print("No content, so Content-Type is not expected")

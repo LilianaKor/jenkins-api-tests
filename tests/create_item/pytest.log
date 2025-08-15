@@ -1,0 +1,2 @@
+2025-08-14 18:48:18 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-14 18:48:18 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy2114 HTTP/1.1" 200 0
