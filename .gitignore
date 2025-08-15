@@ -1,0 +1,16 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Logs
+*.log
+
+# Virtual environments
+.venv/
+env/
+
+# Allure results
+allure-results/
+
+# Pytest cache
+.pytest_cache/
