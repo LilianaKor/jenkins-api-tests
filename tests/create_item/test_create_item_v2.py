@@ -18,23 +18,21 @@ response = CreateItem.post_create_item()
 
 
 def test_code_200():
-    #response = CreateItem.post_create_item()
+    # response = CreateItem.post_create_item()
 
     assert response.status_code == 200
 
 
 def test_headers_server():
-
     print(response.headers)
     assert response.headers.keys().__contains__("Server")
     assert response.headers["Server"] == "Jetty(12.0.16)"
 
 
 def test_headers_content_length_0():
-    #response = CreateItem.post_create_item()
+    # response = CreateItem.post_create_item()
     assert response.headers.keys().__contains__("Content-Length")
     assert response.headers["Content-Length"] == "0"
-
 
 
 def test_headers_content_type_if_present():
@@ -43,3 +41,12 @@ def test_headers_content_type_if_present():
         assert response.headers["Content-Type"].startswith("text/html")
     else:
         print("No content, so Content-Type is not expected")
+
+
+def test_duplicate_item_creation_returns_error():
+    #response = CreateItem.post_create_item()
+    second_response = CreateItem.post_create_item()  # повторно
+
+    assert second_response.status_code == 400
+    assert "X-Error" in second_response.headers
+    assert "already exists" in second_response.headers["X-Error"]
