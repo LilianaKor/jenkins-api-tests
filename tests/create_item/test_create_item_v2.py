@@ -44,9 +44,11 @@ def test_headers_content_type_if_present():
 
 
 def test_duplicate_item_creation_returns_error():
+    #response = CreateItem.post_create_item()
     #first_response = CreateItem.post_create_item()
     second_response = CreateItem.post_create_item()  # повторно
 
     assert second_response.status_code == 400
     assert "X-Error" in second_response.headers
+    assert "already exists" in second_response.headers["X-Error"]
     assert "already exists" in second_response.headers["X-Error"]
