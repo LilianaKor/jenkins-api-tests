@@ -1,5 +1,5 @@
 import requests
-import  random
+import random
 
 
 base_url = "http://localhost:8080"
