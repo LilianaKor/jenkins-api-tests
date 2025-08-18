@@ -1,1 +1,12 @@
-2025-08-14 16:11:32 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): http:80
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy9854 HTTP/1.1" 200 0
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /job/happy1842/disable HTTP/1.1" 302 0
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "GET /job/happy1842/ HTTP/1.1" 200 None
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "GET /job/happy1842/api/json HTTP/1.1" 200 541
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /job/happy1842/enable HTTP/1.1" 302 0
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "GET /job/happy1842/ HTTP/1.1" 200 None
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 20:58:43 [DEBUG] urllib3.connectionpool: http://localhost:8080 "GET /job/happy1842/api/json HTTP/1.1" 200 542
