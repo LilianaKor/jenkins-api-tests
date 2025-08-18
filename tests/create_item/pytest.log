@@ -1,10 +1,4 @@
-
-2025-08-14 19:03:52 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
-2025-08-14 19:03:52 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy5567 HTTP/1.1" 200 0
-2025-08-14 19:03:52 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
-2025-08-14 19:03:52 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy5567 HTTP/1.1" 400 None
-2025-08-14 19:16:32 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
-2025-08-14 19:16:32 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy1303 HTTP/1.1" 200 0
-2025-08-14 19:16:32 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
-2025-08-14 19:16:32 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy1303 HTTP/1.1" 400 None
-
+2025-08-17 19:50:08 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 19:50:08 [DEBUG] urllib3.connectionpool: http://localhost:8080 "POST /createItem?name=happy6085 HTTP/1.1" 200 0
+2025-08-17 19:50:08 [DEBUG] urllib3.connectionpool: Starting new HTTP connection (1): localhost:8080
+2025-08-17 19:50:08 [DEBUG] urllib3.connectionpool: http://localhost:8080 "GET /api/json HTTP/1.1" 200 655
