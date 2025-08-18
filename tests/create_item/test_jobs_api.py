@@ -36,7 +36,7 @@ def test_disable_enable_job():
     print(f"Disabled: status code = {disable_response.status_code}")
     assert disable_response.status_code in [200, 302]
 
-    # Проверим, что теперь job не buildable
+    # Check the job not buildable
     info = JobsAPI.get_job_info(job_name).json()
 
     assert info["buildable"] is False
@@ -51,9 +51,9 @@ def test_disable_enable_job():
 
 def test_delete_job():
     job_name = "job_to_delete"
-    # 1. Создаём job
+    # 1. Crete job
     CreateItem.post_create_item()
-    # 2. Удаляем
+    # 2. Delete
     response = JobsAPI.delete_job(job_name)
     assert response.status_code in [200, 302]
 
