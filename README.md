@@ -1,5 +1,6 @@
-Agent Coding Manifest
-Object Model and Design
+**Agent Coding Manifest**
+
+**Object Model and Design**
 
 Constructors (__init__) should contain only attribute assignments and simple initialization.
 
@@ -25,7 +26,7 @@ Utility classes are forbidden; any “utility” functions should exist as separ
 
 Public constants should reside in modules, not inside classes.
 
-Interfaces and Methods
+**Interfaces and Methods**
 
 Use Protocols (typing.Protocol) for contracts instead of traditional inheritance.
 
@@ -43,7 +44,7 @@ Methods should avoid checking incoming arguments; passing None as an argument is
 
 Exceptions must include context and a precise description of the problem.
 
-Python-Specific Restrictions
+**Python-Specific Restrictions**
 
 Do not use @staticmethod or @classmethod if it turns the class into a “function container”; prefer pure module-level functions.
 
@@ -61,7 +62,7 @@ Modules should be small, follow SRP, and contain closely related entities.
 
 Each method should be short and perform a single task.
 
-Clean Code Practices
+*Clean Code Practices*
 
 Use dataclasses only if they fit the Value Object pattern.
 
@@ -73,7 +74,7 @@ Code should not rely on “magic,” hidden dependencies, or dynamic tricks.
 
 All I/O must be separated from the domain model (pure domain model + separate adapters).
 
-Specific Prohibitions
+**Specific Prohibitions**
 
 Static methods acting as utility functions are forbidden.
 
